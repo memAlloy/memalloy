@@ -2,6 +2,8 @@ site_name: MemAlloy
 site_description: The High-Performance Memory Kernel for AI Agents
 repo_url: https://github.com/memAlloy/memalloy
 repo_name: memAlloy/memalloy
+site_author: Suraj Kekan
+copyright: Copyright &copy; 2025 Suraj Kekan
 
 theme:
   name: material
