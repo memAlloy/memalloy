@@ -1,7 +1,7 @@
 site_name: MemAlloy
 site_description: The High-Performance Memory Kernel for AI Agents
-repo_url: https://github.com/your-username/memalloy
-repo_name: memalloy
+repo_url: https://github.com/memAlloy/memalloy
+repo_name: memAlloy/memalloy
 
 theme:
   name: material
