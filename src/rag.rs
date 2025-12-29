@@ -47,6 +47,7 @@ impl RAGKernel {
     }
 
     /// Add a document to the RAG system
+    #[pyo3(signature = (content, metadata=None))]
     fn add_document(&self, py: Python, content: String, metadata: Option<HashMap<String, String>>) -> PyResult<String> {
         let doc = Document::new(content, metadata);
         let doc_id = doc.id.clone();
