@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT OR Apache-2.0"}
 authors = [
-    {name = "memalloy contributors"}
+    {name = "Suraj Kekan"}
 ]
 keywords = ["rag", "retrieval", "embeddings", "vector-search", "nlp"]
 classifiers = [
