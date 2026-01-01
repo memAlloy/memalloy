@@ -26,7 +26,11 @@ jobs:
           args: --release --out dist --find-interpreter
           sccache: 'true'
           manylinux: auto
-          before-script-linux: yum install -y protobuf-compiler perl-IPC-Cmd perl-Time-Piece openssl-devel
+          before-script-linux: |
+            yum install -y perl-IPC-Cmd perl-Time-Piece openssl-devel unzip
+            curl -LO https://github.com/protocolbuffers/protobuf/releases/download/v25.1/protoc-25.1-linux-x86_64.zip
+            unzip protoc-25.1-linux-x86_64.zip -d /usr/local
+            rm protoc-25.1-linux-x86_64.zip
       - name: Upload wheels
         uses: actions/upload-artifact@v4
         with:
